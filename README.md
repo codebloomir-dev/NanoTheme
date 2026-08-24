@@ -460,6 +460,7 @@ If you have ideas, suggestions, or find any issues, feel free to open an Issue. 
 📞 Contact
 
 · GitHub: codebloomir-dev
+
 · Email: codebloomir@gmail.com
 
 ---
