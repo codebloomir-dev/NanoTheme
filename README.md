@@ -43,6 +43,44 @@ Even though NanoTheme is built independently, it is **fully compatible with Grad
 
 ---
 
+## ✨ Features
+
+| Feature | Description |
+|---------|-------------|
+| 🚀 **Zero Dependencies** | Works only with Android SDK, no conflicts with other libraries. |
+| 💾 **Auto Save** | User's theme selection is automatically saved in `SharedPreferences`. |
+| 🌐 **Global Theme Change** | Changing theme in one screen updates all Activities and Fragments. |
+| 🎨 **Status Bar Management** | Status bar color automatically syncs with the theme. |
+| 🖼️ **Icon Tinting** | Easily tint icons to match the current theme using `tintIcon()`. |
+| 🚫 **No White/Black Flash** | With `windowDisablePreview`, app starts smoothly with no flash. |
+| 🛠️ **Full Customization** | Developers can customize every view to their liking. |
+| 📱 **Dialog Support** | Create theme-aware dialogs with `createDialogBuilder()`. |
+
+---
+
+## 🆓 Freedom & Flexibility
+
+**NanoTheme gives you complete freedom, not restrictions!**
+
+| What you can do | How |
+|-----------------|-----|
+| **Use custom colors** | Set `android:textColor="#FF5722"` directly on any view |
+| **Use theme colors** | Use `?android:textColorPrimary` to follow the theme |
+| **Custom fonts** | Inherit from `Theme.Nano.Starting` and add your font |
+| **Custom views** | Implement `NanoThemeable` to react to theme changes |
+| **Disable features** | Turn off status bar management with `setStatusBarEnabled(false)` |
+| **Ignore the library** | Don't use `tintIcon()` or `createDialogBuilder()` and manage everything yourself |
+
+### 🧠 The Library Works FOR You, Not AGAINST You
+
+- **No forced styles** – You control every view.
+- **No hidden logic** – Everything is transparent.
+- **No restrictions** – You can override anything.
+
+> 💡 **Remember:** NanoTheme is a **toolkit**, not a cage. Use what you need, ignore what you don't.
+
+---
+
 ## ⚠️ Important Note: NanoTheme & NanoUI
 
 **NanoTheme** is a standalone library designed **only** for managing themes (Light/Dark) in Android applications. 
@@ -87,44 +125,6 @@ Library Purpose
 NanoTheme Theme management (Light/Dark)
 NanoUI UI components (Buttons, FAB, etc.)
 Integration ❌ Not provided – developers must handle manually
-
----
-
-## ✨ Features
-
-| Feature | Description |
-|---------|-------------|
-| 🚀 **Zero Dependencies** | Works only with Android SDK, no conflicts with other libraries. |
-| 💾 **Auto Save** | User's theme selection is automatically saved in `SharedPreferences`. |
-| 🌐 **Global Theme Change** | Changing theme in one screen updates all Activities and Fragments. |
-| 🎨 **Status Bar Management** | Status bar color automatically syncs with the theme. |
-| 🖼️ **Icon Tinting** | Easily tint icons to match the current theme using `tintIcon()`. |
-| 🚫 **No White/Black Flash** | With `windowDisablePreview`, app starts smoothly with no flash. |
-| 🛠️ **Full Customization** | Developers can customize every view to their liking. |
-| 📱 **Dialog Support** | Create theme-aware dialogs with `createDialogBuilder()`. |
-
----
-
-## 🆓 Freedom & Flexibility
-
-**NanoTheme gives you complete freedom, not restrictions!**
-
-| What you can do | How |
-|-----------------|-----|
-| **Use custom colors** | Set `android:textColor="#FF5722"` directly on any view |
-| **Use theme colors** | Use `?android:textColorPrimary` to follow the theme |
-| **Custom fonts** | Inherit from `Theme.Nano.Starting` and add your font |
-| **Custom views** | Implement `NanoThemeable` to react to theme changes |
-| **Disable features** | Turn off status bar management with `setStatusBarEnabled(false)` |
-| **Ignore the library** | Don't use `tintIcon()` or `createDialogBuilder()` and manage everything yourself |
-
-### 🧠 The Library Works FOR You, Not AGAINST You
-
-- **No forced styles** – You control every view.
-- **No hidden logic** – Everything is transparent.
-- **No restrictions** – You can override anything.
-
-> 💡 **Remember:** NanoTheme is a **toolkit**, not a cage. Use what you need, ignore what you don't.
 
 ---
 
