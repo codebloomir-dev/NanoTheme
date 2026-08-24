@@ -43,6 +43,53 @@ Even though NanoTheme is built independently, it is **fully compatible with Grad
 
 ---
 
+## ⚠️ Important Note: NanoTheme & NanoUI
+
+**NanoTheme** is a standalone library designed **only** for managing themes (Light/Dark) in Android applications. 
+
+### 🔗 No Built-in Integration with NanoUI
+
+- **NanoTheme** and **[NanoUI](https://github.com/codebloomir-dev/NanoUI)** are two completely independent libraries.
+- **There is NO compatibility layer or adapter** between them.
+- We do **not** provide any automatic synchronization between NanoTheme and NanoUI.
+
+### 🛠️ What Does This Mean for Developers?
+
+If you want to use **both** NanoTheme and NanoUI in the same project, you will need to:
+
+1. **Manually adjust** NanoUI components (like buttons, dialogs, or custom views) to follow the theme changes managed by NanoTheme.
+2. **Use theme-aware attributes** (like `?android:textColorPrimary` or `?android:colorAccent`) in your NanoUI XML layouts to ensure they adapt to Light/Dark mode.
+3. **Test your UI** thoroughly in both themes to ensure proper visibility and consistency.
+
+### ✅ Example: Using NanoUI with NanoTheme
+
+```xml
+<!-- NanoUI button that follows the theme -->
+<com.nanoui.NanoButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="NanoUI Button"
+    android:textColor="?android:textColorPrimary"
+    android:backgroundTint="?android:colorAccent" />
+```
+
+🤝 No Official Integration
+
+We currently have no plans to build a dedicated integration layer between NanoTheme and NanoUI. Developers are free to use both libraries together, but they are responsible for ensuring visual consistency.
+
+💡 Pro Tip: If you're using both libraries, we recommend creating a base theme (inherited from Theme.Nano.Starting) and customizing NanoUI components within that theme for a seamless experience.
+
+---
+
+📝 Summary
+
+Library Purpose
+NanoTheme Theme management (Light/Dark)
+NanoUI UI components (Buttons, FAB, etc.)
+Integration ❌ Not provided – developers must handle manually
+
+---
+
 ## ✨ Features
 
 | Feature | Description |
